@@ -4,3 +4,14 @@
 # carte-conso-plus-api
 
 API pour interagir avec le site (http://www.consoplus.nc/) de la Carte Conso + (Nouvelle-Calédonie).
+
+# Endpoints
+
+`/` : welcome message
+
+`/{login}/{password}` : main details
+
+`/{login}/{password}/solde` : le solde brut (pas de json)
+
+`/{login}/{password}/detail` : le detail décrit, brut (pas de json)
+
