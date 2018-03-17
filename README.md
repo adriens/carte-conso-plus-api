@@ -5,6 +5,10 @@
 
 API pour interagir avec le site (http://www.consoplus.nc/) de la Carte Conso + (Nouvelle-Calédonie).
 
+# Demo
+
+![Dummy demo screenshot](DEMO.png "Dummy demo screenshot")
+
 # Endpoints
 
 `/` : welcome message
