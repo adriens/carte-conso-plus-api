@@ -37,7 +37,8 @@ public class CarteConsoController {
     }
 
     
-    @RequestMapping("/{login}/{password}")
+    @RequestMapping(value = "/{login}/{password}",
+            produces = { "application/json", "application/xml" })
     public CarteConsoCrawler getDetails(
             @PathVariable("login") String login,
             @PathVariable("password") String password
