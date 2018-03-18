@@ -4,6 +4,8 @@
 
 # carte-conso-plus-api
 
+[![Join the chat at https://gitter.im/carte-conso-plus-api/Lobby](https://badges.gitter.im/carte-conso-plus-api/Lobby.svg)](https://gitter.im/carte-conso-plus-api/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 API pour interagir avec le site (http://www.consoplus.nc/) de la Carte Conso + (Nouvelle-Calédonie).
 
 # Demo
