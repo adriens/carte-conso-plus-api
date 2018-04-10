@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.adriens.cate.conso.plus.api</groupId>
-    <artifactId>api</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <artifactId>carte-conso-plus-api</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>carte-conso-plus-api</name>
@@ -21,6 +21,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        
+        <!-- Plugins -->
+        <!-- Plugins versions -->
+        <maven-shade-plugin.version>3.0.0</maven-shade-plugin.version>
+
+        <!-- Application dependencies -->
+        <carte-conso-plus-sdk.version>1.1</carte-conso-plus-sdk.version>
     </properties>
 
     <repositories>
@@ -31,8 +38,6 @@
     </repositories>
         
     <dependencies>
-		
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -50,7 +55,7 @@
         <dependency>
             <groupId>com.github.adriens</groupId>
             <artifactId>carte-conso-plus-sdk</artifactId>
-            <version>1.0</version>
+            <version>${carte-conso-plus-sdk.version}</version>
         </dependency>
 
     </dependencies>
@@ -60,6 +65,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>${maven-shade-plugin.version}</version>
+                <configuration>
+          
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
