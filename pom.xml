@@ -27,7 +27,7 @@
         <maven-shade-plugin.version>3.0.0</maven-shade-plugin.version>
 
         <!-- Application dependencies -->
-        <carte-conso-plus-sdk.version>1.0</carte-conso-plus-sdk.version>
+        <carte-conso-plus-sdk.version>1.1</carte-conso-plus-sdk.version>
     </properties>
 
     <repositories>
@@ -38,8 +38,6 @@
     </repositories>
         
     <dependencies>
-		
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
