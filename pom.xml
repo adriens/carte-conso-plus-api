@@ -15,7 +15,9 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +26,6 @@
         
         <!-- Plugins -->
         <!-- Plugins versions -->
-        <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
 
         <!-- Application dependencies -->
         <carte-conso-plus-sdk.version>1.1</carte-conso-plus-sdk.version>
@@ -66,24 +67,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>${maven-shade-plugin.version}</version>
-                <configuration>
-          
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
-
-
 </project>
