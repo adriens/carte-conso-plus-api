@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/adriens/carte-conso-plus-api.svg?branch=master)](https://travis-ci.org/adriens/carte-conso-plus-api)
-[![Dependency Status](https://beta.gemnasium.com/badges/github.com/adriens/carte-conso-plus-api.svg)](https://beta.gemnasium.com/projects/github.com/adriens/carte-conso-plus-api)
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/deffc8e0359909a35d44)
 
 # carte-conso-plus-api
