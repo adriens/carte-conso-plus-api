@@ -24,7 +24,7 @@
         
         <!-- Plugins -->
         <!-- Plugins versions -->
-        <maven-shade-plugin.version>3.0.0</maven-shade-plugin.version>
+        <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
 
         <!-- Application dependencies -->
         <carte-conso-plus-sdk.version>1.1</carte-conso-plus-sdk.version>
