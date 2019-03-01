@@ -21,6 +21,9 @@ API pour interagir avec le site (http://www.consoplus.nc/) de la Carte Conso + (
 
 `/{login}/{password}/detail` : le detail décrit, brut (pas de json)
 
+`/partners` : la liste des partenaires de la carte (json)
+
+
 # Heroku
 
 ```
@@ -28,7 +31,9 @@ https://carte-conso-plus.herokuapp.com/
 https://carte-conso-plus.herokuapp.com/{YOUR_LOGIN}/{YOUR_PASSWORD}
 https://carte-conso-plus.herokuapp.com/{YOUR_LOGIN}/{YOUR_PASSWORD}/detail
 https://carte-conso-plus.herokuapp.com/{YOUR_LOGIN}/{YOUR_PASSWORD}/solde
+https://carte-conso-plus.herokuapp.com/partners/
 ```
+
 # Postman doc
 
 [Postman documentation](https://documenter.getpostman.com/view/3489712/carte-conso-plus/RVnZgHts)

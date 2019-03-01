@@ -6,7 +6,10 @@
 package com.github.adriens.cate.conso.plus.api;
 
 import com.github.adriens.cate.conso.plus.sdk.CarteConsoCrawler;
+import com.github.adriens.cate.conso.plus.sdk.Partner;
 import java.io.IOException;
+import java.util.List;
+import javax.xml.bind.JAXBException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -61,5 +64,10 @@ public class CarteConsoController {
             @PathVariable("password") String password
     ) throws IOException {
                 return new CarteConsoCrawler(login, password).getSolde();
+    }
+    
+    @RequestMapping("/partners")
+    public List<Partner> getPartners() throws JAXBException {
+                return CarteConsoCrawler.getPartners();
     }
 }
