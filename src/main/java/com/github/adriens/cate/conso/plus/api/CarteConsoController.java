@@ -6,6 +6,7 @@
 package com.github.adriens.cate.conso.plus.api;
 
 import com.github.adriens.cate.conso.plus.sdk.CarteConsoCrawler;
+import com.github.adriens.cate.conso.plus.sdk.MagazineConsoPlus;
 import com.github.adriens.cate.conso.plus.sdk.Partner;
 import java.io.IOException;
 import java.util.List;
@@ -69,5 +70,16 @@ public class CarteConsoController {
     @RequestMapping("/partners")
     public List<Partner> getPartners() throws JAXBException {
                 return CarteConsoCrawler.getPartners();
+    }
+    
+    @RequestMapping("/mags")
+    public List<MagazineConsoPlus> getMagazines() throws Exception{
+                return CarteConsoCrawler.getConsoPlusMagazines();
+    }
+    
+    
+    @RequestMapping("/mags/latest")
+    public MagazineConsoPlus getLatestMagazine() throws Exception{
+                return CarteConsoCrawler.getLatestMagazine();
     }
 }
