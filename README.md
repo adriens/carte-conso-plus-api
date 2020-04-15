@@ -23,6 +23,10 @@ API pour interagir avec le site (http://www.consoplus.nc/) de la Carte Conso + (
 
 `/partners` : la liste des partenaires de la carte (json)
 
+`/mags` : tous les magazines
+
+`/mags/latest` : le dernier mag
+
 
 # Heroku
 
