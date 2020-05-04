@@ -5,7 +5,7 @@
 
     <groupId>com.github.adriens.cate.conso.plus.api</groupId>
     <artifactId>carte-conso-plus-api</artifactId>
-    <version>1.7</version>
+    <version>1.8-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>carte-conso-plus-api</name>
