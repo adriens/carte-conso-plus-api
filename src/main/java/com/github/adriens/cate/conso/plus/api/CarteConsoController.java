@@ -40,7 +40,6 @@ public class CarteConsoController {
         return out;
     }
 
-    
     @RequestMapping(value = "/{login}/{password}",
             produces = { "application/json", "application/xml" })
     public CarteConsoCrawler getDetails(
@@ -49,24 +48,7 @@ public class CarteConsoController {
     ) throws IOException {
         return new CarteConsoCrawler(login, password);
     }
-    
-    @RequestMapping("/{login}/{password}/detail")
-    public String getSoldeDescription(
-            @PathVariable("login") String login,
-            @PathVariable("password") String password
-    ) throws IOException {
-        
-        return new CarteConsoCrawler(login, password).getSoldeDescription();
-    }
-    
-    @RequestMapping("/{login}/{password}/solde")
-    public int getSolde(
-            @PathVariable("login") String login,
-            @PathVariable("password") String password
-    ) throws IOException {
-                return new CarteConsoCrawler(login, password).getSolde();
-    }
-    
+ 
     @RequestMapping("/partners")
     public List<Partner> getPartners() throws JAXBException {
                 return CarteConsoCrawler.getPartners();
