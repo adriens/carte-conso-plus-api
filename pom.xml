@@ -5,7 +5,7 @@
 
     <groupId>com.github.adriens.cate.conso.plus.api</groupId>
     <artifactId>carte-conso-plus-api</artifactId>
-    <version>1.9-SNAPSHOT</version>
+    <version>1.9</version>
     <packaging>jar</packaging>
 
     <name>carte-conso-plus-api</name>
@@ -28,7 +28,7 @@
         <!-- Plugins versions -->
 
         <!-- Application dependencies -->
-        <carte-conso-plus-sdk.version>1.8</carte-conso-plus-sdk.version>
+        <carte-conso-plus-sdk.version>2.0</carte-conso-plus-sdk.version>
     </properties>
 
     <repositories>
