@@ -5,7 +5,7 @@
 
     <groupId>com.github.adriens.cate.conso.plus.api</groupId>
     <artifactId>carte-conso-plus-api</artifactId>
-    <version>1.9</version>
+    <version>1.10</version>
     <packaging>jar</packaging>
 
     <name>carte-conso-plus-api</name>
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
+        <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -28,7 +28,7 @@
         <!-- Plugins versions -->
 
         <!-- Application dependencies -->
-        <carte-conso-plus-sdk.version>2.0</carte-conso-plus-sdk.version>
+        <carte-conso-plus-sdk.version>2.1</carte-conso-plus-sdk.version>
     </properties>
 
     <repositories>
